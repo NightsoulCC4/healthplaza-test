@@ -27,14 +27,14 @@ const QuizPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='flex flex-col justify-center items-center h-screen w-full'>
       {randomQuestions.length > 0 && (
         <QuestionComponent
           question={randomQuestions[currentQuestionIndex]}
           onAnswer={handleAnswer}
         />
       )}
-      <p>Score: {score}</p>
+      <p className='text-lg my-3'>Score: {score}</p>
     </div>
   );
 };
