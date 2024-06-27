@@ -1,7 +1,7 @@
 const ranking = (place: number) => {
   let format_place: string = place.toString();
 
-  if (format_place.slice(0, 1) === "1") {
+  if (format_place.slice(0, 1) === "1" && format_place.slice(1, 2) !== "") {
     format_place += "th";
   } else {
     switch (format_place.slice(-1)) {
