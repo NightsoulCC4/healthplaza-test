@@ -12,9 +12,8 @@ const Leaderboard: React.FC<Props> = ({ scores }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center h-screen w-full mx-8 my-4">
+    <div className="flex flex-col items-center justify-center h-screen w-full">
       <h2 className="text-center text-4xl my-3">Leaderboard</h2>
-
       <div className="relative overflow-x-auto">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
